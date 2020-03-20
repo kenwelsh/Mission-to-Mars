@@ -127,3 +127,7 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# various test files
+Mission_to_Mars.py
+Practice.ipynb
