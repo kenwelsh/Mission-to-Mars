@@ -22,7 +22,9 @@ def scrape():
    mars = mongo.db.mars
    mars_data = scraping.scrape_all()
    mars.update({}, mars_data, upsert=True)
-   return "Scraping Successful!"
+   return render_template("scrape.html")
+   
+   # "Scraping Successful!"
 
 # tell Flask to run
 if __name__ == "__main__":

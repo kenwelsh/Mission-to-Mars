@@ -9,6 +9,7 @@
 <body>
   
   <div class="container">
+    <br>
     <!-- Add Jumbotron to Header -->
     <div class="jumbotron text-center">
       <h1>Mission to Mars</h1>
@@ -55,6 +56,35 @@
         </div>
       </div>
     </div>
+
+    <!-- Section for Mars Hemisphere titles and links -->
+    <div class="row">
+      <div class="col-md-12">  
+        <h2>Mars Hemispheres</h2>
+        <ul class="list-unstyled">
+
+          {% for hemi in mars.mars_hemispheres %}
+          <li class="media">
+            
+            <div class="media-left">
+              <img class="mr-3" src={{hemi.img_thumb}} alt="Thumbnail image">
+            </div>
+            
+            <div class="media-body">
+              <h4 class="mt-0 mb-1">{{hemi.title}}</h4>
+              <p>Link:</p>
+              <a href={{hemi.img_url}} target="_blank">{{hemi.img_url}}</a>
+            </div>
+          
+          </li>
+          <br> 
+          {% endfor %}
+            
+        </ul>
+      </div>
+    </div>
+    
+    
   </div>
 </body>
 </html>
