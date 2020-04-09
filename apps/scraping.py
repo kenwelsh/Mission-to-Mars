@@ -127,6 +127,9 @@ def scrape_all():
                 
             # Get the title for the image
             title = img_soup.select_one('h2.title').get_text()
+
+            # Get the description for the image
+            description = img_soup.select_one('p').get_text()
                 
             # Find the relative image url for full image
             img_url_rel_full = img_soup.select_one('img.wide-image').get("src")
@@ -145,7 +148,7 @@ def scrape_all():
             # Optional delay for loading the page
             browser.is_element_present_by_xpath("//div[@class='description']/a/h3", wait_time=1)
             
-            hemi_results = {"index": index_num, "title": title, "img_url": img_url_full, "img_thumb": img_thumb}
+            hemi_results = {"index": index_num, "title": title, "description": description, "img_url": img_url_full, "img_thumb": img_thumb}
          
             return mars_hemi_list.append(hemi_results)
             
