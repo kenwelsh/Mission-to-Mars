@@ -16,7 +16,7 @@ Sites visited:
    
   #### Example of Output
   
-  ![](https://github.com/kenwelsh/Mission-to-Mars/blob/master/images/mission_to_mars_04.png "Mars Scrape Results")
+  ![](https://github.com/kenwelsh/Mission-to-Mars/blob/master/images/mission_to_mars_05.png "Mars Scrape Results")
   
   #### Resources
   + Visual Studio Code - version 1.43.1
